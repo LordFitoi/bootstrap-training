@@ -8,12 +8,172 @@
     <link rel="stylesheet" href="style.scss">
   </head>
   <body>
-    <div class="container">
-      <nav class="nav">
-        <a class="nav-link active" href="#"><i class="fas fa-home fa-lg fa-fw"></i>Inicio</a>
-        <a class="nav-link" href="#"><i class="fas fa-envelope fa-lg fa-fw"></i>Contacto</a>
-        <a class="nav-link" href="#"><i class="fas fa-info-circle fa-lg fa-fw"></i>Acerca De...</a>
+    <header class="mb-4 bg-light">
+      <nav class="navbar navbar-expand-lg container">
+        
+        <a class="navbar-brand" href="#">CAmerica</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Paises
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar articulo..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+       
       </nav>
+    </header>
+    <div class="container">
+      <div class="alert alert-primary d-flex align-items-center gap-2" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+        <div>
+          Esta pagina aun esta en desarrollo, puede que no todas las opciones sean funcionales.
+        </div>
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Paises</li>
+        </ol>
+      </nav>
+      <div class="row">
+        <!-- CARDS -->
+        <div class="card-container gap-2 col-md-8">
+          <article id="belice" class="card">
+            <img class="card-img-top" src="./assets/images/belice-1.jpeg">
+            <div class="card-body">
+                <h5 class="card-title">Belice</h5>
+                <p class="card-text">
+                    Es un país de la costa este de América Central,
+                    con riberas en el mar Caribe hacia el este y una selva
+                    densa al oeste. Frente a sus costas, la enorme Barrera
+                    del Arrecife de Belice...
+                </p>
+            </div>
+          </article>
+          <article id="costa-rica" class="card">
+              <img class="card-img-top" src="/assets/images/costarica-1.jpeg">
+              <div class="card-body">
+                  <h5 class="card-title">Costa Rica</h5>
+                  <p class="card-text">
+                      Es un país de América Central con una geografía
+                      accidentada, que incluye bosques tropicales y costas en el
+                      Caribe y el Pacífico. Aunque su capital, San José, es hogar
+                      de instituciones...
+                  </p>
+              </div>
+          </article>
+          <article id="el-salvador" class="card">
+            <img class="card-img-top" src="/assets/images/elsalvador-1.webp" alt="">
+            <div class="card-body">
+                <h5 class="card-title">El Salvador</h5>
+                <p class="card-text">
+                    Es la capital y la urbe más grande de la República de El Salvador
+                    y una de las ciudades más pobladas de Centroamérica. Ubicada en uno
+                    de los catorce departamentos de la nación, específicamente en el
+                    departamento de San...
+                </p>
+            </div>
+          </article>
+          <article id="guatemala" class="card">
+            <img class="card-img-top" src="/assets/images/guatemala-1.webp" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Guatemala</h5>
+                <p class="card-text">
+                    Un país de América Central al sur de México, tiene volcanes,
+                    bosques tropicales y antiguos sitios mayas. La capital, Ciudad de Guatemala,
+                    cuenta con el imponente Palacio Nacional de la Cultura y el Museo Nacional
+                    de Arqueología y Etnología...
+                </p>
+            </div>
+          </article>
+          <article id="guatemala" class="card">
+            <img class="card-img-top" src="/assets/images/costarica-2.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Los mejores sitios turisticos de Costa Rica</h5>
+                <p class="card-text">
+                    Costa Rica es un pais de América Central con una geografía muy peculiar,
+                    que incluye bosques tropicales y costas en el Caribe y el Pacífico.
+                    Aunque su capital, San José, es hogar de instituciones...
+                </p>
+            </div>
+          </article>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- ASIDE BAR -->
+        <aside class="card flex-col p-3 col-md-4 h-max">
+          <form>
+            <h4 class="card-title">Suscribete al Blog!</h4>
+            <p class="card-text">Inscribete a nuestro blog para que este informado de todas las actualizaciones.</p>
+            <input type="email" name="" id="" placeholder="Escribe tu correo...">
+            <button type="submit">Apuntarse</button>
+          </form>
+          <hr>
+          <h4>Lista de Paises</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Belice</h5>
+                <small>1 days ago</small>
+              </div>
+              <p class="mb-1">Es un país de la costa este de América Central,
+                con riberas en el mar Caribe hacia...</p>
+              <small>Por: Nahum Santana</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Costa Rica</h5>
+                <small class="text-muted">2 days ago</small>
+              </div>
+              <p class="mb-1">Es un país de América Central con una geografía
+                accidentada..</p>
+              <small class="text-muted">Por: Nahum Santana</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">El Salvador</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1"> Es la capital y la urbe más grande de la República
+                de El Salvador...</p>
+              <small class="text-muted">Por: Nahum Santana</small>
+            </a>
+            
+          </div>
+        </aside>
+      </div>
     </div>
   </body>
 </html>
